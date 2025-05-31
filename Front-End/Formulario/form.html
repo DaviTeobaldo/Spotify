@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Cadastrar </title>
+</head>
+<body>
+    <header><!-- inicio Cabecalho -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+          <div class="container">
+            
+            <a href="/" class="navbar-brand">
+              <img src="imagens/spotify.svg" width="142">
+            </a>
+  
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+              <i class="fas fa-bars text-white"></i>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="nav-principal">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="" class="nav-link"><p>Premium</p></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link"><p>Ajuda</p></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link"><p>Baixar</p></a>
+                </li>
+  
+                <li class="nav-item divisor"></li>
+  
+              
+                <li class="nav-item">
+                  <a href="login" class="nav-link" ><p>Entrar</p></a>
+                </li>
+              </ul>
+            </div>
+  
+          </div>
+        </nav>
+      </header><!--/fim Cabecalho -->
+  
+  <div class="preloader" id="preloader"> <!-- Efeito de Tela branca-->
+    <div class="loader" id="loader"></div> <!-- Efeito de Loading-->
+</div>    
+    
+   
+    <div class="page">
+        <div class="card">
+            <form action="/receber" method="post">
+                <h2>Cadastro</h2>
+                <p>Digite seus dados para se Cadastrar</p>
+                <input class="campo" name="nome" type="name" placeholder="Digite seu Nome de Usuário:">
+                <input class="campo" name="email" type="email" placeholder="Digite seu Email:">
+                <input class="campo" name="senha" type="password" placeholder="Digite sua Senha:">
+
+                <a href="#">Esqueci a senha</a>
+                <input class="btn" type="Submit" value="Acessar">
+                <p>Já tem uma conta? <a href="login"> Acesse-a agora.</a></p>
+
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="imagens/spotify.svg" width="142">
+            </div>
+            <div class="col-md-2">
+              <h4>company</h4>
+              <ul class="navbar-nav">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Empregos</a></li>
+                <li><a href="">Imprensa</a></li>
+                <li><a href="">Novidades</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h4>comunidades</h4>
+              <ul class="navbar-nav">
+                <li><a href="">Artistas</a></li>
+                <li><a href="">Desenvolvedores</a></li>
+                <li><a href="">Marcas</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h4>links uteis</h4>
+              <ul class="navbar-nav">
+                <li><a href="">Ajuda</a></li>
+                <li><a href="">Presentes</a></li>
+                <li><a href="">Player da web</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/Spotify/"><img src="imagens/facebook.png"></a>
+                </li>
+                <li>
+                  <a href="https://th.bing.com/th/id/OIP.sKQsCo4X6JPbB5SaoFLGLQAAAA?rs=1&pid=ImgDetMain"><img src="imagens/twitter.png"></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/spotify/"><img src="imagens/instagram.png"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+    
+
+    <script src="/js/script-preloader.js"></script>
+
+</body>
+
+
+</html>

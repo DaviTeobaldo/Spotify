@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+	background: url(../imagens/capa.png),
+				url(../imagens/ruido.png),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+
+
+
+
+}
+
+img{
+    width: 50%;
+}
+
+.principal{
+    width: 100%;
+    display: flex; 
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.erro{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+a{
+    
+	font-size: 0.9em;
+	color: #7f0a9c;
+	text-decoration: none;
+    
+}
+
+a:hover{
+    color: hsl(265, 100%, 50%);
+}
+
+/*Preloader e Loader*/
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: spinz 1.30s linear infinite; /*Animação responsável pelo efeito*/
+	width: 100%;
+	height: 100%;
+	/* background-color: #ffffff; */
+	background: url(../imagens/capa.png),
+				url(../imagens/ruido.png),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+       /* Change the background color here */
+	z-index: 100;
+  }
+  
+  .loader {
+	border: 16px solid #efeee8;
+	border-top: 16px solid #0032A0; 
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 1.35s linear infinite; /*Animação responsável pelo efeito*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+  }
+
+  
+  @keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  opacity:1;
+	}
+	50% {
+	  transform: rotate(360deg);
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	  transform: rotate(180deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	  opacity:0;
+	}
+  }
+  
+  @keyframes spinz {
+	0% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
